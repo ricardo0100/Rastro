@@ -1,0 +1,23 @@
+<!-- Fixed navbar -->
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html"><img src="static/assets/img/logo.png" alt=""></a>
+    </div>
+    <div class="navbar-collapse collapse navbar-right">
+      <ul class="nav navbar-nav">
+        <li #equal(currentMenuActive, "index") { #() class="active" }><a href="/">HOME</a></li>
+        <li #equal(currentMenuActive, "about") { #() class="active" }><a href="sobre">SOBRE A RASTRO</a></li>
+        <li #equal(currentMenuActive, "services") { #() class="active" }><a href="servicos">SERVIÇOS</a></li>
+        <li><a target="_blank" href="https://medium.com/@rastro.eco.br">BLOG</a></li>
+        <li #equal(currentMenuActive, "contact") { #() class="active" }><a href="contato">CONTATO</a></li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div>
+</div>

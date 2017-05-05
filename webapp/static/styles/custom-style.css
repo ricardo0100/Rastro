@@ -1,0 +1,58 @@
+@media (min-width: 992px) {
+    #service h4 {
+        height: 50px;
+        text-align: center;
+        line-height: 25px;
+    }
+
+    .service-description {
+        height: 160px;
+    }
+}
+
+.client-logo {
+  margin-bottom: 50px;
+}
+
+.client-logo img {
+  margin: auto;
+}
+
+#cwrap {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.mtb {
+  padding-top: 120px;
+}
+
+.blog a {
+  color: #4a7729;
+}
+
+#services {
+  padding-top: 80px;
+}
+
+#services h5 {
+  color: black;
+  font-weight: bold;
+}
+
+.navbar-brand {
+  padding-top: 5px;
+}
+
+.blackwhite {
+  filter: grayscale(100%);
+  width: 70%;
+}
+
+.ctitle {
+  color: #4a7729;
+}
+
+.he-wrap {
+
+}
