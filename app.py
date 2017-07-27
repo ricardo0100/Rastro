@@ -12,11 +12,11 @@ app.debug = True
 
 @app.route('/')
 def index():
-    return render_template("index.html")
+    return render_template("index.html", menuActive="index")
 
 @app.route('/sobre')
 def sobre():
-    return render_template('sobre.html')
+    return render_template('sobre.html', menuActive="about")
 
 @app.route('/blog')
 def blog():
@@ -24,11 +24,11 @@ def blog():
 
 @app.route('/contato')
 def contato():
-    return render_template('contato.html')
+    return render_template('contato.html', menuActive="contact")
 
 @app.route('/servicos')
 def servicos():
-    return render_template('servicos.html')
+    return render_template('servicos.html', menuActive="services")
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0')

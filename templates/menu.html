@@ -12,11 +12,11 @@
     </div>
     <div class="navbar-collapse collapse navbar-right">
       <ul class="nav navbar-nav">
-        <li #equal(currentMenuActive, "index") { #() class="active" }><a href="/">HOME</a></li>
-        <li #equal(currentMenuActive, "about") { #() class="active" }><a href="sobre">SOBRE A RASTRO</a></li>
-        <li #equal(currentMenuActive, "services") { #() class="active" }><a href="servicos">SERVIÇOS</a></li>
+        <li {% if menuActive == 'index' %}class="active"{% endif %}><a href="/">HOME</a></li>
+        <li {% if menuActive == 'about' %}class="active"{% endif %}><a href="sobre">SOBRE A RASTRO</a></li>
+        <li {% if menuActive == 'services' %}class="active"{% endif %}><a href="servicos">SERVIÇOS</a></li>
         <li><a target="_blank" href="https://medium.com/@rastro.eco.br">BLOG</a></li>
-        <li #equal(currentMenuActive, "contact") { #() class="active" }><a href="contato">CONTATO</a></li>
+        <li {% if menuActive == 'contact' %}class="active"{% endif %}><a href="contato">CONTATO</a></li>
       </ul>
     </div><!--/.nav-collapse -->
   </div>
